@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
+import GameOfLifeView from '../views/GameOfLifeView.vue';
 
 const router = createRouter({
     history: createWebHistory(''),
@@ -12,6 +13,11 @@ const router = createRouter({
             path: '/home',
             name: 'home',
             component: HomeView
+        },
+        {
+            path: '/game-of-life',
+            name: 'game-of-life',
+            component: GameOfLifeView
         }
     ]
 });
